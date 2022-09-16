@@ -1,0 +1,208 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+header{
+    display: flex;
+    background-color: #5958A8;
+    color: #f9fcfe;
+
+}
+
+h1, p {
+    margin: 0.5em;
+}
+
+
+#main-nav a{
+    color: #f9fcfe;
+    background: #5958A8;
+    display: block;
+    height: 4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+
+#main-nav a:hover{
+    background: #7573DB;
+    
+}
+
+#main-nav ul{
+    list-style: none;
+    display: flex;
+    /*Flyttar upp länkarna till toppen i rad*/
+}
+
+#main-nav li{
+    width: 100%;
+    text-align: center;
+    /*Länkarna täcker nu hela sidan och texten hamnar i mitten av boxarna*/
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li{
+    display: block;
+    top:0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top:0px;
+}
+
+.submenu{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100% ;
+}
+
+ul{
+   list-style: none;
+}
+
+h1{
+    color: #5958A8;
+    text-align: center;
+}
+h3, h4, p {
+    color: #5958A8;
+}
+
+a {
+    color: #5958A8;
+    text-decoration: none;
+
+}
+article{
+    background-color: #5958A8;
+    color: #f9fcfe;
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+    padding: 20px;
+
+}
+
+.main-content{
+    display: flex;
+    background-color: "#f9fcfe6";
+    flex-direction: column; /*Nu hamnar boxarna i rätt ordning*/
+   /* height: 100%; hmm.. footern hoppar upp igen..*/ 
+
+}
+
+
+#rubrik{
+    display: flex;
+    justify-content: center;
+}
+
+#innehall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex; 
+    flex-grow: 1;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align: center;
+    margin: 3em;
+    
+
+}
+
+.cont-innehall{
+    display: flex;
+    margin: 4em 4em;
+    flex-direction: column;
+    
+
+}
+
+.cont-innehall2{
+  
+    align-items: center;
+    display: flex;
+    margin: 4em 4em;
+    
+
+}
+.cont-innehall2 > img{
+    width: 600px;
+    height: 430px;
+}
+
+
+.cont-innehall3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cont-innehall3 > p {
+    font-size: large;
+}
+
+.hast{
+    display: flex;
+    flex-direction: column; /*Hästens namn under bilden*/
+    width: 150px;
+    height: 210px;
+    margin: 0.5rem;
+
+}
+
+.hast > img{
+    border-radius: 2em;
+}
+.hast > p{
+    color: #5958A8;
+    font-size: larger; 
+    text-align: center;
+}
+
+.borjaridaparent{
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.borjarida{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+
+}
+.borjarida > img{
+align-items: center;
+}
+
+
+footer{
+    background-color: #5958A8;
+    color: #f9fcfe;
+    display:flex;
+    height: 8em;
+    /*Texten hamnar i mitten av sidan */
+    justify-content: center;
+    align-items: center;
+    
+}
